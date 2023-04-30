@@ -32,21 +32,20 @@ For interaction, I parse it into *interactions.csv* with below fields:
 * *book_id*: unique id of a book
 * *rating* : rating that a user give a book
 
-and because *interactions.csv* is quite large (315MB) so you can download it __[here](https://drive.google.com/file/d/1fey5xMQkP4k2bbPVpwn0DeQqx5CZpxZM/view?usp=sharing)__
+and because *interactions.csv* is quite large (315MB) so I cannot include it in this repo, you can download it __[here](https://drive.google.com/file/d/1fey5xMQkP4k2bbPVpwn0DeQqx5CZpxZM/view?usp=sharing)__
 
 ## Method
 
-In part I, we gonna use a basic intuitive approach to provide books recommendation:
+In part I, we gonna use a basic intuitive approach to provide books recommendation but still follow CF principle:
 
 * Get list of user who also like the same book in the favorite list
-* Get all the books that the above list of user rated
-* Count number of appearance of each book 
-* Calculate the popularity score of each book, make sure that the recommender don't just always recommend the most rated books
-* Produce the recommendation based on popularity score
+* Get all the books that the above list of user liked
+* Count number of appearance of each book and their average ratings.
+* Calculate the metric score of each book, make sure that the recommender don't just always recommend the most popular books
+* Produce the recommendation based on score
 
 
-In Part II, we try to use another approach which find user who has the most similar taste to us using cosine_similarity and  take a look at which books the other users likes, then produce recommendations.
- 
+In Part II, we narrow down the list of similar user by computing cosine_similarity between user and only taking recommendation from top-k users.
 
 ## Results
 
@@ -59,5 +58,7 @@ Based on the initial list of favorite books, which mainly contain One Piece mana
 * Hybrid system mixing content-based recommender and user-based collaborative filtering
 
 * Try out item-based collaborative filtering
+
+* Try using SVD approach
 
 
