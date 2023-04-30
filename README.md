@@ -1,9 +1,9 @@
-# Book Recommender
+# Collaborative-Filtering Book Recommender
 
 
 ## Goals
 
-Given a list of favorite books, provide a list of recommendation based on other users' ratings.
+Given a list of favorite books, provide a list of recommendation based on other users' preferences applying **Collaborative-Filtering** principle.
 
 ## Data
 
