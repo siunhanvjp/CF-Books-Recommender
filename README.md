@@ -57,8 +57,6 @@ Based on the initial list of favorite books, which mainly contain One Piece mana
 
 * Hybrid system mixing content-based recommender and user-based collaborative filtering
 
-* Try out item-based collaborative filtering
-
-* Try using SVD approach
+* Try using SVD approach (**update**: try it but the dataset was too large to handle :sob:)
 
 
